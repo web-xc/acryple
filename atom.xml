@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Ariasakaの小窝</title>
+  <title>XC&#39;s Blog</title>
   
   
-  <link href="https://web-xc.github.io/acryple/atom.xml" rel="self"/>
+  <link href="https://b.webxc.ml/atom.xml" rel="self"/>
   
-  <link href="https://web-xc.github.io/acryple/"/>
+  <link href="https://b.webxc.ml/"/>
   <updated>2022-12-29T10:07:16.000Z</updated>
-  <id>https://web-xc.github.io/acryple/</id>
+  <id>https://b.webxc.ml/</id>
   
   <author>
-    <name>Ariasaka</name>
+    <name>XC&#39;s Blog</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://web-xc.github.io/acryple/posts/4a17b156/"/>
-    <id>https://web-xc.github.io/acryple/posts/4a17b156/</id>
+    <link href="https://b.webxc.ml/posts/4a17b156/"/>
+    <id>https://b.webxc.ml/posts/4a17b156/</id>
     <published>2023-01-27T09:44:03.128Z</published>
     <updated>2022-12-29T10:07:16.000Z</updated>
     
