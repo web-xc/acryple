@@ -1,63 +1,3 @@
-@font-face{
-    font-family: 'Fredoka';
-    font-display: swap; 
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/Fredoka.woff2') format("woff2");/*/font/HYTangMeiRen55W.ttf*/
-}
-@font-face{
-    font-family: 'Monaco';
-    font-display: swap; 
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/MONACO.TTF') format("truetype");/*/font/HYTangMeiRen55W.ttf*/
-}
-@font-face{
-    font-family: 'HYTMR';
-    font-display: swap;
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/HYTangMeiRen55W.woff2') format("woff2");/*/font/HYTangMeiRen55W.woff2*/
-}
-@font-face{
-    font-family: 'FZXJLJ';
-    font-display: swap;
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/FZXiJinLJW.woff2') format("woff2");/*/font/HYTangMeiRen55W.ttf*/
-}
-@font-face{
-    font-family: 'FZXS';
-    font-display: swap;
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/FZXiangSu14.woff2') format("woff2");/*/font/HYTangMeiRen55W.ttf*/
-}
-@font-face{
-    font-family: 'HYPailou';
-    font-display: swap; 
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/HanyiSentyPailouArch.woff2') format("woff2");/*/font/HYTangMeiRen55W.ttf*/
-}
-@font-face{
-    font-family: 'FZODZK';
-    font-display: swap; 
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/FZShouJiOuDieZhengKai.woff2') format("woff2");/*/font/HYTangMeiRen55W.ttf*/
-}
-@font-face{
-    font-family: 'Source Serif';
-    font-display: swap; 
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/SourceHanSerifSC-Medium.otf') format("opentype");/*/font/HYTangMeiRen55W.ttf*/
-}
-@font-face{
-    font-family: 'Source Sans';
-    font-display: swap; /*https://ghproxy.com/https://raw.githubusercontent.com/LYXOfficial/LYXOfficial.github.io/master/font/HYTangMeiRen55W.woff2*/
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/SourceHanSansCN-Medium.otf') format("opentype");/*/font/HYTangMeiRen55W.ttf*/
-}
-@font-face{
-    font-family: 'ZhuZiAWan';
-    font-display: swap; /*https://ghproxy.com/https://raw.githubusercontent.com/LYXOfficial/LYXOfficial.github.io/master/font/HYTangMeiRen55W.woff2*/
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/ZhuZiAWan.woff2') format("woff2");/*/font/HYTangMeiRen55W.ttf*/
-}
-@font-face{
-    font-family: 'HYPailou';
-    font-display: swap; /*https://ghproxy.com/https://raw.githubusercontent.com/LYXOfficial/LYXOfficial.github.io/master/font/HYTangMeiRen55W.woff2*/
-    src: url('https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/HanyiSentyPailouArch.woff2') format("woff2");/*/font/HYTangMeiRen55W.ttf*/
-}
-/* @font-face{
-    font-family: 'KyoukashoProL';
-    font-display: swap; 
-    src: url('/font/JiaoKeShuTi-ICA-Pro-L-2.otf') format("opentype");
-} */
 :root{
     --global-font:"";
 }
@@ -101,8 +41,8 @@ body {
 	z-index: 100;
 	box-shadow: 3px 3px 5px #88888894;
 	background-color: #ffffffdd;
-	backdrop-filter: blur(30px) saturate(180%);
-	-webkit-backdrop-filter: blur(30px) saturate(180%);
+	backdrop-filter: blur(0px) saturate(180%);
+	-webkit-backdrop-filter: blur(0px) saturate(180%);
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	-ms-border-radius: 8px;
@@ -121,8 +61,8 @@ body {
 	z-index: 100;
 	box-shadow: 3px 3px 5px #88888894;
 	background-color: #0008;
-	backdrop-filter: blur(30px) saturate(180%);
-	-webkit-backdrop-filter: blur(30px) saturate(180%);
+	backdrop-filter: blur(0px) saturate(180%);
+	-webkit-backdrop-filter: blur(0px) saturate(180%);
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	-ms-border-radius: 8px;
@@ -182,59 +122,59 @@ body {
 	display: none;
 }
 #nav{
-	background-color: #879caa99;
-    backdrop-filter: blur(10px) saturate(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(180%);
+	background-color: #dcdcdc8f;
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='light'] #post{
     background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='light'] #page{
     background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='dark'] #page{
     background-color: var(--lyx-black-acrylic2);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='light'] #archive{
     background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='dark'] #archive{
     background-color: var(--lyx-black-acrylic2);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='light'] #tag{
     background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='dark'] #tag{
     background-color: var(--lyx-black-acrylic2);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='light'] #category{
     background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='dark'] #category{
     background-color: var(--lyx-black-acrylic2);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='dark'] #post{
     background-color: var(--lyx-black-acrylic2);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 #aside_content:hover,.card-widget:hover, #recent-posts>.recent-post-item:hover{
 	border: 1px solid var(--lyx-theme)!important;
@@ -422,34 +362,34 @@ h2.f4.text-normal.mb-3 {
         }
 [data-theme='light'] .speak{
 	background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 	border-radius: 12px;
 }
 [data-theme='dark'] .speak{
 	background-color: var(--lyx-black-acrylic3);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 	border-radius: 12px;
 }
 
 
 [data-theme='light'] .calendar{
 	background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 	border-radius: 12px;
 }
 [data-theme='dark'] .calendar{
 	background-color: var(--lyx-black-acrylic3);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 	border-radius: 12px;
 }
 #aside-content.card-widget.card-info{
 	background-color: #66CCFFAA!important;
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border: 1px solid var(--lyx-border);
 }
 th{
@@ -485,38 +425,38 @@ th{
 }
 [data-theme='light'] .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post,#tag,#category{
 	background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border: 1px solid var(--lyx-border);
 }
 [data-theme='light'] #recent-posts>.recent-post-item{
     background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border: 1px solid var(--lyx-border);
 }
 [data-theme='dark'] #recent-posts>.recent-post-item{
     background-color: var(--lyx-black-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border: 1px solid var(--lyx-border);
 }
 [data-theme='dark']  .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
 	background-color: var(--lyx-black-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border: 1px solid var(--lyx-border);
 }
 [data-theme='light'] .card-widget{
     background-color: var(--lyx-white-acrylic2)!important;
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border: 1px solid var(--lyx-border);
 }
 [data-theme='dark'] .card-widget{
     background-color: var(--lyx-black-acrylic1)!important;
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border: 1px solid var(--lyx-border);
 }
 [data-theme='light'] .cal-title{
@@ -568,13 +508,13 @@ th{
 }
 [data-theme='light'] .card-widget.card-calendar{
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme='dark'] .card-widget.card-calendar{
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-black-acrylic1)!important;
 }
 /* html {
@@ -590,8 +530,8 @@ th{
     color:var(--lyx-black);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-white-acrylic1)!important;
     border-radius: 12px;
     margin-top:20px;
@@ -601,8 +541,8 @@ th{
     color:var(--lyx-white);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border-radius: 12px;
     background-color: var(--lyx-black-acrylic2)!important;
     margin-top:20px;
@@ -617,8 +557,8 @@ th{
     width:40%!important;
     color:var(--lyx-white);
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-white-acrylic1)!important;
     border-radius: 12px;
     margin-right: 10px !important;
@@ -631,8 +571,8 @@ th{
     width: 40%!important;
     color:var(--lyx-black);
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-black-acrylic1)!important;
     border-radius: 12px;
     margin-right: 10px !important;
@@ -705,8 +645,8 @@ hr{
     color:var(--lyx-black);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-white-acrylic1)!important;
     border-radius: 12px;
     width:60%!important;
@@ -715,8 +655,8 @@ hr{
     color:var(--lyx-white);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-black-acrylic2)!important;
     border-radius: 12px;
     width:60%!important;
@@ -725,8 +665,8 @@ hr{
     color:var(--lyx-black);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-white-acrylic1)!important;
     border-radius: 12px;
     width:60%!important;
@@ -735,8 +675,8 @@ hr{
     color:var(--lyx-white);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-black-acrylic2)!important;
     border-radius: 12px;
     width:60%!important;
@@ -814,8 +754,8 @@ hr{
     color:var(--lyx-white);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-white-acrylic1)!important;
     border-radius: 12px;
     width:auto;
@@ -826,8 +766,8 @@ hr{
     flex-direction: column;
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-black-acrylic2)!important;
     border-radius: 12px;
     width:auto;
@@ -1029,8 +969,8 @@ hr{
     padding:4px;
     border-radius: 12px;
     background-color: var(--lyx-white-acrylic1)!important;
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border: 1px solid var(--lyx-border);
     height: 40px!important;
 }
@@ -1038,8 +978,8 @@ hr{
     padding:4px;
     border-radius: 12px;
     background-color: var(--lyx-black-acrylic1)!important;
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border: 1px solid var(--lyx-border);
     height: 40px!important;
 }
@@ -1156,8 +1096,8 @@ hr{
     background-color: var(--lyx-white-acrylic1);
     width:100%;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme="dark"] #tagCloud{
     margin-bottom:20px;
@@ -1165,8 +1105,8 @@ hr{
     background-color: var(--lyx-black-acrylic1);
     width:100%;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 #tagCloud:hover{
     border:1px solid var(--lyx-theme);
@@ -1204,8 +1144,8 @@ hr{
     background-color: var(--lyx-white-acrylic2);
     width:100%;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 [data-theme="dark"] .sticky_layout{
     margin-bottom:20px;
@@ -1213,8 +1153,8 @@ hr{
     background-color: var(--lyx-black-acrylic1);
     width:100%;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 .sticky_layout:hover{
     border:1px solid var(--lyx-theme);
@@ -1259,8 +1199,8 @@ hr{
     color:var(--lyx-black);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-white-acrylic1)!important;
     border-radius: 12px;
     margin-bottom: 10px;
@@ -1270,8 +1210,8 @@ hr{
     color:var(--lyx-white);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border-radius: 12px;
     background-color: var(--lyx-black-acrylic2)!important;
     margin-bottom:10px;
@@ -1285,15 +1225,15 @@ hr{
     color:var(--lyx-white);
 }
 .post-bg::before{
-    backdrop-filter:blur(10px) saturate(180%);
-    -webkit-backdrop-filter:blur(10px) saturate(180%);
+    backdrop-filter:blur(5px) saturate(180%);
+    -webkit-backdrop-filter:blur(5px) saturate(180%);
 }
 /* [data-theme='light'] .card-weather{
     color:var(--lyx-black);
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-white-acrylic2)!important;
     height: 290px
 }
@@ -1301,8 +1241,8 @@ hr{
     color:var(--lyx-white)!important;
     font-size:18px;
     border: 1px solid var(--lyx-border);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     background-color: var(--lyx-black-acrylic1)!important;
     flex-flow: column;
     height:290px
@@ -1868,8 +1808,8 @@ html {
 #random-hover:hover{
    color:#ffffff;
    background-color: #425aefdd;
-   backdrop-filter: blur(10px) saturate(180%);
-   -webkit-backdrop-filter: blur(10px) saturate(180%);
+   backdrop-filter: blur(0px) saturate(180%);
+   -webkit-backdrop-filter: blur(0px) saturate(180%);
 }
 
 
@@ -1995,8 +1935,8 @@ html {
 }
 .fl{
     background-color: var(--lyx-white-acrylic1);
-    backdrop-filter: blur(30px) saturate(180%);
-    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    backdrop-filter: blur(0px) saturate(180%);
+    -webkit-backdrop-filter: blur(0px) saturate(180%);
     border-radius: 12px;
 }
 [data-theme='dark'] .fl{
@@ -2429,24 +2369,24 @@ a:hover{
 }
 #cf-state {
     background: var(--lyx-white-acrylic2)!important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     border-radius: 10px;
     padding-top: 15px;
 }
 [data-theme="dark"] #cf-state {
     background: var(--lyx-black-acrylic2)!important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     border-radius: 10px;
     padding-top: 15px;
 }
 .cf-article{
     background: var(--lyx-white-acrylic2)!important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     border-radius: 10px;
 }
 [data-theme="dark"] .cf-article{
     background: var(--lyx-black-acrylic2)!important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     border-radius: 10px;
 }
 
@@ -2553,8 +2493,8 @@ a:hover{
     background-color: #000000aa!important;
 }
 .OwO-body{
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     background: #ffffff77!important;
 }
 [data-theme="dark"] .OwO-body{
@@ -2566,8 +2506,8 @@ a:hover{
 }
 .snackbar-container{
     font-family: var(--global-font),'PingFang SC','Ubuntu Mono','Noto Sans','Microsoft Yahei','SimSun'!important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
 }
 @media screen and (max-width:640px){
     .snackbar-container{
@@ -2725,7 +2665,7 @@ a:hover{
 #changeBgBox{
         
         border-radius: 12px;
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(0px);
         
 }
 [data-theme="light"] #changeBgBox{
@@ -2845,7 +2785,7 @@ body{
     background-color: url(/img/fcircle-for-iconfont.svg);
 }
 #footer::before{
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
 }
 [data-theme="light"] #footer::before{
     background-color: var(--lyx-white-acrylic2);
@@ -3167,7 +3107,7 @@ transform: translateY(5px);}
     left:0;
     top:0;
     border-radius: 10px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     background-color: #ffffff66;
     content: "";
     width:100%;
@@ -3190,11 +3130,11 @@ transform: translateY(5px);}
 }
 [data-theme="light"] .swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{
     background-color: #ffffffaa;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
 }
 [data-theme="dark"] .swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{
     background-color: #000000aa!important;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     
 }
 [data-theme="dark"].swal2-title{
@@ -3216,13 +3156,13 @@ transform: translateY(5px);}
     background-color: var(--lyx-white-acrylic1);
     padding: 4px;
     border-radius: 4px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
 }
 [data-theme="dark"] #fps{
     background-color: var(--lyx-black-acrylic1);
     padding: 4px;
     border-radius: 4px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
 }
 .toc-content{
     width:100%
@@ -3254,7 +3194,7 @@ transform: translateY(5px);}
     left: 10px!important;
     background: #fffa!important;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -3271,7 +3211,7 @@ transform: translateY(5px);}
     left: 10px!important;
     background: #0008!important;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -3307,7 +3247,7 @@ transform: translateY(5px);}
     transform: translate(100px,-20px);
     width: 200px;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     -webkit-transform: translate(100px,-20px);
     -moz-transform: translate(100px,-20px);
     -ms-transform: translate(100px,-20px);
@@ -3677,8 +3617,8 @@ transform: translateY(5px);}
     width: 100%;
     background: var(--anzhiyu-maskbg);
     padding: 0.5rem 2rem;
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: saturate(180%) blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     transition: 1s ease-in-out;
     font-size: 20px;
   }
@@ -4890,7 +4830,7 @@ transform: translateY(5px);}
     width: 100%;
     height: 100%;
     content:'';
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     background:var(--lyx-white-acrylic2);
 }
 [data-theme="dark"] .page #page:not(.home #page)::before, [data-theme="dark"] #tag::before,[data-theme="dark"] #category::before,[data-theme="dark"] #archive::before{
@@ -4943,7 +4883,7 @@ transform: translateY(5px);}
         width: 100%;
         height: 100%;
         content:'';
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(0px);
         background:var(--lyx-white-acrylic2);
     }
     [data-theme="dark"] #post::before{
@@ -5255,7 +5195,7 @@ transform: translateY(5px);}
     -o-border-radius: 20px;
     border: 1px solid var(--lyx-border);
     padding:30px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(0px);
     -ms-transform-origin-y:translate(-50%,-50%);
     -webkit-transform:translate(-50%,-50%);
     -moz-transform:translate(-50%,-50%);

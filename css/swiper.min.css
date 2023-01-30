@@ -662,8 +662,8 @@ button.swiper-pagination-bullet {
     height: 100%;
     background: #000;
     opacity: .6;
-    -webkit-filter: blur(50px);
-    filter: blur(50px);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
     z-index: 0
 }
 
