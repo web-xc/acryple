@@ -1,17 +1,17 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>CSS第五天-定位 | XC's Blog</title><meta name="keywords" content="学习笔记-CSS"><meta name="author" content="XC's Blog"><meta name="copyright" content="XC's Blog"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="CSS第五天-定位    静态定位：static   定位的默认值，写边偏移也不会有效果     相对定位：relative 父元素搭配子绝父相使用   根据自身原来的位置，进行定位   没有脱标，在页面还占有位置  天生就是给绝对定位当爹用     绝对定位：absolute   根据最近带有定位(非静态)的祖先元素来定位  子绝父相   脱离标准流，在页面不占有位置   绝对定位，固定定位，">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>JavaScript 第五天 | XC's Blog</title><meta name="keywords" content="JavaScript笔记"><meta name="author" content="XC's Blog"><meta name="copyright" content="XC's Blog"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="什么是对象:  保存网站用户信息，比如姓名，年龄，电话号码… 用以前学的数据类型方便吗？   不方便，很难区分   我们是不是需要学习一种新的数据类型，可以详细的描述某个事物？    姓名, 年龄, 电话   对象（object）：JavaScript里的一种数据类型   可以理解为是一种无序的数据集合   用来描述某个事物，例如描述一个人   人有姓名、年龄、性别等信息、还有吃饭睡觉打代码等功">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS第五天-定位">
-<meta property="og:url" content="https://d.webxc.ml/posts/4048938649/index.html">
+<meta property="og:title" content="JavaScript 第五天">
+<meta property="og:url" content="https://d.webxc.ml/posts/fd38/index.html">
 <meta property="og:site_name" content="XC's Blog">
-<meta property="og:description" content="CSS第五天-定位    静态定位：static   定位的默认值，写边偏移也不会有效果     相对定位：relative 父元素搭配子绝父相使用   根据自身原来的位置，进行定位   没有脱标，在页面还占有位置  天生就是给绝对定位当爹用     绝对定位：absolute   根据最近带有定位(非静态)的祖先元素来定位  子绝父相   脱离标准流，在页面不占有位置   绝对定位，固定定位，">
+<meta property="og:description" content="什么是对象:  保存网站用户信息，比如姓名，年龄，电话号码… 用以前学的数据类型方便吗？   不方便，很难区分   我们是不是需要学习一种新的数据类型，可以详细的描述某个事物？    姓名, 年龄, 电话   对象（object）：JavaScript里的一种数据类型   可以理解为是一种无序的数据集合   用来描述某个事物，例如描述一个人   人有姓名、年龄、性别等信息、还有吃饭睡觉打代码等功">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://npm.elemecdn.com/webxc@1.0.0/cover/css2.jpg">
-<meta property="article:published_time" content="2022-01-20T10:00:00.000Z">
-<meta property="article:modified_time" content="2023-01-17T13:28:59.000Z">
+<meta property="og:image" content="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg">
+<meta property="article:published_time" content="2023-02-16T09:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-17T06:20:40.000Z">
 <meta property="article:author" content="XC's Blog">
-<meta property="article:tag" content="学习笔记-CSS">
+<meta property="article:tag" content="JavaScript笔记">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://npm.elemecdn.com/webxc@1.0.0/cover/css2.jpg"><link rel="shortcut icon" href="https://npm.elemecdn.com/webxc@1.0.0/logo/logo.jpg"><link rel="canonical" href="https://d.webxc.ml/posts/4048938649/"><link rel="preconnect" href="//cdn1.tianli0.top"><link rel="preconnect" href="//cdn.dusays.com"><link rel="manifest" href="/manifest.json"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/img/32.png"><link rel="icon" type="image/png" sizes="16x16" href="/img/16.png"><link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg"><link rel="shortcut icon" href="https://npm.elemecdn.com/webxc@1.0.0/logo/logo.jpg"><link rel="canonical" href="https://d.webxc.ml/posts/fd38/"><link rel="preconnect" href="//cdn1.tianli0.top"><link rel="preconnect" href="//cdn.dusays.com"><link rel="manifest" href="/manifest.json"><link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/img/32.png"><link rel="icon" type="image/png" sizes="16x16" href="/img/16.png"><link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -48,12 +48,12 @@
   islazyload: false,
   isAnchor: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'CSS第五天-定位',
+  title: 'JavaScript 第五天',
   isPost: true,
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-01-17 21:28:59'
+  postUpdate: '2023-02-17 14:20:40'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -162,336 +162,90 @@
     }
     detectApple()
     })(window)</script><link rel="stylesheet" href="/css/ariasakablog.css"><link id="css" rel="stylesheet" href="/css/stylessimple.css"><link rel="stylesheet" href="/css/iconfont.css"><style>#article-container h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 3s linear infinite; -moz-animation: avatar_turn_around 3s linear infinite; -o-animation: avatar_turn_around 3s linear infinite; -ms-animation: avatar_turn_around 3s linear infinite; animation: avatar_turn_around 3s linear infinite; }</style><style id="barragesColor"></style><style id="settingStyle"></style><style id="yjjs"></style><style id="themeColor"></style><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC"><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="/css/commentBarrage.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC"><link rel="stylesheet" type="text/css" href="https://cdn1.tianli0.top/npm/node-snackbar@latest/dist/snackbar.min.css"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script><script>LA.init({id: "JnlSnWLD7XChjrlx",ck: "JnlSnWLD7XChjrlx"})</script><script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script><script>new LingQue.Monitor().init({id:"JnnW6bt2WtyehVan"});</script><script src="/swReg.js"></script></head><body><span id="fps"></span><style id="grays"></style><script src="https://cdn1.tianli0.top/npm/prefetch-page"></script><script>addEventListener('DOMContentLoaded', function () {prefetch({ threshold: 25, delay: 3000, limit: 10 ,customs: ['search.xml']})});requestIdleCallback(function () {prefetch({ threshold: 25, delay: 3000, limit: 10,customs: ['search.xml']})})</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper-lyx/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn1.tianli0.top/npm/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="XC's Blog" type="application/atom+xml">
-<div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-newspaper"></i><span> 文章</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="javascript:toRandomPost()" rel="external nofollow noreferrer"><i class="fa-fw fa fa-paper-plane"></i><span> 随便逛逛</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-sitemap"></i><span> 本站</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/speaks/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></li><li><a class="site-page child" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fab fa-galactic-republic"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/othersite/"><i class="fa-fw fa fa-tasks"></i><span> 分站</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></li><li><a class="site-page child" href="/messageboard/"><i class="fa-fw fa fa-blackboard"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-fw fas fa-address-card"></i><span> 我的</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fa fa-photo-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa-fw fas fa fa-film"></i><span> 追番</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-info-circle"></i><span> 关于我</span></a></li><li><a class="site-page child" href="/license/"><i class="fa-fw fas fa-balance-scale"></i><span> 声明</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-fw fas fa-tools"></i><span> 工具</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/kongtiao/"><span> 小空调</span></a></li><li><a class="site-page child" href="/zaobao/"><i class="fa-fw fa fa-newspaper"></i><span> 每日早报</span></a></li><li><a class="site-page child" href="/muyu/"><i class="fa-fw fa fa-cog"></i><span> 木鱼</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 线路</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.webxc.ml"><span> Vercel</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://webxc.tk"><span> Netlify</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://cf.webxc.ml"><span> Cloudflare</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://webxc.ml"><span> Github</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/webxc@1.0.0/cover/css2.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">XC's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-newspaper"></i><span> 文章</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="javascript:toRandomPost()" rel="external nofollow noreferrer"><i class="fa-fw fa fa-paper-plane"></i><span> 随便逛逛</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-sitemap"></i><span> 本站</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/speaks/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></li><li><a class="site-page child" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fab fa-galactic-republic"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/othersite/"><i class="fa-fw fa fa-tasks"></i><span> 分站</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></li><li><a class="site-page child" href="/messageboard/"><i class="fa-fw fa fa-blackboard"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-fw fas fa-address-card"></i><span> 我的</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fa fa-photo-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa-fw fas fa fa-film"></i><span> 追番</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-info-circle"></i><span> 关于我</span></a></li><li><a class="site-page child" href="/license/"><i class="fa-fw fas fa-balance-scale"></i><span> 声明</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-fw fas fa-tools"></i><span> 工具</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/kongtiao/"><span> 小空调</span></a></li><li><a class="site-page child" href="/zaobao/"><i class="fa-fw fa fa-newspaper"></i><span> 每日早报</span></a></li><li><a class="site-page child" href="/muyu/"><i class="fa-fw fa fa-cog"></i><span> 木鱼</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 线路</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.webxc.ml"><span> Vercel</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://webxc.tk"><span> Netlify</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://cf.webxc.ml"><span> Cloudflare</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://webxc.ml"><span> Github</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:rmf.scrollToTop()" rel="external nofollow noreferrer">PAGE_NAME</a></center></div><div id="toggleButtons"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><!--span=' '+_p('search.title')--></a></div><div id="randoms"><a class="site-page social-icon" href="javascript:toRandomPost()" rel="external nofollow noreferrer"><i class="fa fa-paper-plane"></i></a></div><div id="travellings"><a class="site-page social-icon" target="_blank" rel="noopener external nofollow noreferrer" href="https://travellings.link"><i class="fa fa-subway"></i></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CSS第五天-定位</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-01-20T10:00:00.000Z" title="发表于 2022-01-20 18:00:00">2022-01-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-17T13:28:59.000Z" title="更新于 2023-01-17 21:28:59">2023-01-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-CSS/">学习笔记-CSS</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="CSS第五天-定位"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="twikoo_visitors"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/posts/4048938649/#post-comment"><span id="twikoo-count"></span></a></span><span class="post-meta-separator">|&nbsp; <span class="post-meta-dianzan"><a class="dianzan" href="javascript:void(0)" rel="external nofollow noreferrer" onclick="dianzan()"><i class="fas fa-thumbs-up"></i></a><span class="post-meta-label"> 点赞:</span><span class="dianzan-count">0</span></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="css第五天-定位"><a class="markdownIt-Anchor" href="#css第五天-定位"></a> CSS第五天-定位</h3>
+<div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-newspaper"></i><span> 文章</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="javascript:toRandomPost()" rel="external nofollow noreferrer"><i class="fa-fw fa fa-paper-plane"></i><span> 随便逛逛</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-sitemap"></i><span> 本站</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/speaks/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></li><li><a class="site-page child" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fab fa-galactic-republic"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/othersite/"><i class="fa-fw fa fa-tasks"></i><span> 分站</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></li><li><a class="site-page child" href="/messageboard/"><i class="fa-fw fa fa-blackboard"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-fw fas fa-address-card"></i><span> 我的</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fa fa-photo-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa-fw fas fa fa-film"></i><span> 追番</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-info-circle"></i><span> 关于我</span></a></li><li><a class="site-page child" href="/license/"><i class="fa-fw fas fa-balance-scale"></i><span> 声明</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-fw fas fa-tools"></i><span> 工具</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/kongtiao/"><span> 小空调</span></a></li><li><a class="site-page child" href="/zaobao/"><i class="fa-fw fa fa-newspaper"></i><span> 每日早报</span></a></li><li><a class="site-page child" href="/muyu/"><i class="fa-fw fa fa-cog"></i><span> 木鱼</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 线路</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.webxc.ml"><span> Vercel</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://webxc.tk"><span> Netlify</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://cf.webxc.ml"><span> Cloudflare</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://webxc.ml"><span> Github</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">XC's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-newspaper"></i><span> 文章</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="javascript:toRandomPost()" rel="external nofollow noreferrer"><i class="fa-fw fa fa-paper-plane"></i><span> 随便逛逛</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-sitemap"></i><span> 本站</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/speaks/"><i class="fa-fw fa fa-comments"></i><span> 说说</span></a></li><li><a class="site-page child" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/fcircle/"><i class="fa-fw fab fa-galactic-republic"></i><span> 朋友圈</span></a></li><li><a class="site-page child" href="/othersite/"><i class="fa-fw fa fa-tasks"></i><span> 分站</span></a></li><li><a class="site-page child" href="/update/"><i class="fa-fw fa fa-bell"></i><span> 日志</span></a></li><li><a class="site-page child" href="/messageboard/"><i class="fa-fw fa fa-blackboard"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-fw fas fa-address-card"></i><span> 我的</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fa fa-photo-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fa-fw fas fa fa-film"></i><span> 追番</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fa fa-info-circle"></i><span> 关于我</span></a></li><li><a class="site-page child" href="/license/"><i class="fa-fw fas fa-balance-scale"></i><span> 声明</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa-fw fas fa-tools"></i><span> 工具</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" href="/kongtiao/"><span> 小空调</span></a></li><li><a class="site-page child" href="/zaobao/"><i class="fa-fw fa fa-newspaper"></i><span> 每日早报</span></a></li><li><a class="site-page child" href="/muyu/"><i class="fa-fw fa fa-cog"></i><span> 木鱼</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-link"></i><span> 线路</span><!--i.fas.fa-chevron-down--></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.webxc.ml"><span> Vercel</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://webxc.tk"><span> Netlify</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://cf.webxc.ml"><span> Cloudflare</span></a></li><li><a class="site-page child" target="_blank" rel="noopener external nofollow noreferrer" href="https://webxc.ml"><span> Github</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:rmf.scrollToTop()" rel="external nofollow noreferrer">PAGE_NAME</a></center></div><div id="toggleButtons"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><!--span=' '+_p('search.title')--></a></div><div id="randoms"><a class="site-page social-icon" href="javascript:toRandomPost()" rel="external nofollow noreferrer"><i class="fa fa-paper-plane"></i></a></div><div id="travellings"><a class="site-page social-icon" target="_blank" rel="noopener external nofollow noreferrer" href="https://travellings.link"><i class="fa fa-subway"></i></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">JavaScript 第五天</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-16T09:00:00.000Z" title="发表于 2023-02-16 17:00:00">2023-02-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-02-17T06:20:40.000Z" title="更新于 2023-02-17 14:20:40">2023-02-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/JavaScript%E7%AC%94%E8%AE%B0/">JavaScript笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">824</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title="JavaScript 第五天"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="twikoo_visitors"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/posts/fd38/#post-comment"><span id="twikoo-count"></span></a></span><span class="post-meta-separator">|&nbsp; <span class="post-meta-dianzan"><a class="dianzan" href="javascript:void(0)" rel="external nofollow noreferrer" onclick="dianzan()"><i class="fas fa-thumbs-up"></i></a><span class="post-meta-label"> 点赞:</span><span class="dianzan-count">0</span></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h4 id="什么是对象"><a class="markdownIt-Anchor" href="#什么是对象"></a> 什么是对象:</h4>
+<ul>
+<li>保存网站用户信息，比如姓名，年龄，电话号码… 用以前学的数据类型方便吗？</li>
+</ul>
+<ol>
+<li>不方便，很难区分</li>
+</ol>
+<ul>
+<li>我们是不是需要学习一种新的数据类型，可以详细的描述某个事物？</li>
+</ul>
 <ol>
 <li>
-<h5 id="静态定位static"><a class="markdownIt-Anchor" href="#静态定位static"></a> 静态定位：static</h5>
+<p>姓名, 年龄, 电话</p>
 </li>
 <li>
-<p>定位的默认值，写边偏移也不会有效果</p>
+<p>对象（object）：JavaScript里的一种数据类型</p>
+</li>
+<li>
+<p>可以理解为是一种无序的数据集合</p>
+</li>
+<li>
+<p>用来描述某个事物，例如描述一个人</p>
+</li>
+<li>
+<p>人有姓名、年龄、性别等信息、还有吃饭睡觉打代码等功能</p>
+</li>
+<li>
+<p>如果用多个变量保存则比较散，用对象比较统一</p>
+</li>
+<li>
+<p>比如描述 班主任 信息：</p>
 </li>
 </ol>
-<hr>
-<h4 id="相对定位relative"><a class="markdownIt-Anchor" href="#相对定位relative"></a> 相对定位：relative</h4>
-<p>父元素搭配<strong>子绝父相</strong>使用</p>
+<ul>
+<li>静态特征 (姓名, 年龄, 身高, 性别, 爱好) =&gt; 可以使用数字, 字符串, 数组, 布尔类型等表示 </li>
+<li>动态行为 (点名, 唱, 跳, rap) =&gt; 使用函数表示</li>
+</ul>
 <ol>
-<li>
-<p>根据自身原来的位置，进行定位</p>
-</li>
-<li>
-<p>没有脱标，在页面还占有位置  天生就是给绝对定位当爹用</p>
-</li>
+<li>对象是一种数据类型, 无序的数据的集合</li>
+<li>无序的数据的集合, 可以详细的描述描述某个事物</li>
 </ol>
-<hr>
-<h4 id="绝对定位absolute"><a class="markdownIt-Anchor" href="#绝对定位absolute"></a> 绝对定位：absolute</h4>
+<h3 id="对象使用"><a class="markdownIt-Anchor" href="#对象使用"></a> 对象使用:</h3>
+<ul>
+<li>对象声明语法:</li>
+</ul>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 对象名 = {}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="对象有属性和方法组成"><a class="markdownIt-Anchor" href="#对象有属性和方法组成"></a> 对象有属性和方法组成:</h3>
+<ul>
+<li>属性：信息或叫特征（名词）。 比如 手机尺寸、颜色、重量等…</li>
+<li>方法：功能或叫行为（动词）。 比如 手机打电话、发短信、玩游戏…</li>
+</ul>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 对象名 = {</span><br><span class="line">    属性名: 属性值,</span><br><span class="line">    方法名: 函数</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="属性"><a class="markdownIt-Anchor" href="#属性"></a> 属性:</h4>
 <ol>
-<li>
-<p>根据最近带有定位(非静态)的祖先元素来定位  <strong>子绝父相</strong></p>
-</li>
-<li>
-<p>脱离标准流，在页面不占有位置</p>
-</li>
-<li>
-<p>绝对定位，固定定位，浮动，可以直接设置宽度和高度，默认宽度是内容宽度</p>
-</li>
+<li>数据描述性的信息称为属性，如人的姓名、身高、年龄、性别等，一般是名词性的</li>
+<li>属性都是成 对出现的，包括属性名和值，它们之间使用英文 : 分隔</li>
+<li>多个属性之间使用英文 , 分隔</li>
+<li>属性就是依附在对象上的变量（外面是变量，对象内是属性）</li>
+<li>属性名可以使用 “” 或 ‘’，一般情况下省略，除非名称遇到特殊符号如空格、中横线等</li>
+<li>对象属性没有顺序, 属性和值用 ; 隔开, 多个属性用，逗号隔开</li>
 </ol>
-<hr>
-<h4 id="固定定位fixed"><a class="markdownIt-Anchor" href="#固定定位fixed"></a> 固定定位：fixed</h4>
+<h5 id="请声明一个产品对象里面包如下信息"><a class="markdownIt-Anchor" href="#请声明一个产品对象里面包如下信息"></a> 请声明一个产品对象，里面包如下信息：</h5>
+<h3 id="属性访问"><a class="markdownIt-Anchor" href="#属性访问"></a> 属性访问:</h3>
 <ol>
-<li>
-<p>永远根据浏览器可视区域定位，不会随着滚动条的滚动而滚动</p>
-</li>
-<li>
-<p>可以直接加宽高，默认宽度是内容宽度</p>
-</li>
-<li>
-<p>脱离标准流，在页面不占有位置</p>
-</li>
-<li>
-<p>解决分辨率问题有两种方法…</p>
-</li>
+<li>声明对象，并添加了若干属性后，可以使用 . 或 [] 获得对象中属性对应的值，我称之为属性访问</li>
+<li>简单理解就是获得对象里面的属性值</li>
+<li>问属性两种方式: 点形式 对象.属性   [] 形式 对象[‘属性’]</li>
+<li>点后面的属性名一定不要加引号  [] 里面的属性名一定加引号 后期不同使用场景会用到不同的写法</li>
 </ol>
-<hr>
-<h4 id="定位层级z-index"><a class="markdownIt-Anchor" href="#定位层级z-index"></a> 定位层级：z-index</h4>
+<figure class="highlight js"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> num1 = {</span><br><span class="line">    <span class="attr">name</span>: <span class="string">'Mark'</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">20</span>,</span><br><span class="line">    <span class="attr">sex</span>: <span class="string">'男'</span></span><br><span class="line">}</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(num1.<span class="property">age</span>)</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(num1.<span class="property">sex</span>)</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="对象中的方法"><a class="markdownIt-Anchor" href="#对象中的方法"></a> 对象中的方法:</h3>
 <ol>
-<li>
-<p>只有定位有这属性，绝对定位、固定定位、相对定位</p>
-</li>
-<li>
-<p>默认值：auto，数字越大，<strong>层级越高</strong></p>
-</li>
-<li>
-<p>可以设置正值或负值，<strong>没单位</strong></p>
-</li>
+<li>数据行为性的信息称为方法，如跑步、唱歌等，一般是动词性的，其本质是函数</li>
+<li>方法是由方法名和函数两部分构成，它们之间使用 : 分隔</li>
+<li>多个属性之间使用英文 , 分隔</li>
+<li>方法是依附在对象中的函数</li>
+<li>方法名可以使用 “” 或 ‘’，一般情况下省略，除非名称遇到特殊符号如空格、中横线等</li>
 </ol>
-<hr>
-<h4 id="过渡-transition"><a class="markdownIt-Anchor" href="#过渡-transition"></a> 过渡: transition</h4>
+<h4 id="对象中的方法访问"><a class="markdownIt-Anchor" href="#对象中的方法访问"></a> 对象中的方法访问:</h4>
 <ol>
-<li>
-<p>让元素样式慢慢变化，常配合hover使用，增强网页交互体验</p>
-</li>
-<li>
-<p>过度所有属性：transition: all 1s === <strong>给盒子添加阴影效果</strong></p>
-</li>
-<li>
-<p>transition: 过度属性 花费时间(s) 运动曲线 何时开始</p>
-</li>
-<li>
-<p>可以简写：transition: width 1s, height 1s, background 1s</p>
-</li>
+<li>声明对象，并添加了若干方法后，可以使用 . 调用对象中函数，我称之为方法调用</li>
+<li>注意： 千万别忘了给方法名后面加小括号</li>
 </ol>
-<hr>
-<h4 id="盒子阴影-box-shadow"><a class="markdownIt-Anchor" href="#盒子阴影-box-shadow"></a> 盒子阴影: box-shadow</h4>
-<ol>
-<li>
-<p>给盒子添加阴影效果</p>
-</li>
-<li>
-<p>h-shadow、v-shadow、blur、color…</p>
-</li>
-<li>
-<p>spread 语言扩大  ///   inset  内部阴影</p>
-</li>
-</ol>
-<hr>
-<h4 id="隐藏元素重点"><a class="markdownIt-Anchor" href="#隐藏元素重点"></a> 隐藏元素（重点）：</h4>
-<p>开发中经常会通过 display属性完成元素的显示隐藏切换</p>
-<ol>
-<li>display：none；（隐藏）、 display：block；（显示）</li>
-<li>visibility：hidden 隐藏元素本身，隐藏后的元素还占有位置</li>
-<li>display：none 隐藏元素本身，隐藏后的元素不占有位置</li>
-</ol>
-<hr>
-<h4 id="垂直方向居中"><a class="markdownIt-Anchor" href="#垂直方向居中"></a> 垂直方向居中：</h4>
-<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">第一种：                          第二种：left: 50%           第三种：</span><br><span class="line">top: 50%                                margin-left: -75px   top: 0</span><br><span class="line">left: 50%                               top: 50%             left: 0</span><br><span class="line">transform: translate(-50%, -50%)        margin-top: -40px    right: 0</span><br><span class="line">                                                             bottom: 0</span><br><span class="line">                                                             margin: auto</span><br></pre></td></tr></tbody></table></figure>
-<hr>
-<h5 id="水平方向居中"><a class="markdownIt-Anchor" href="#水平方向居中"></a> 水平方向居中：</h5>
-<ol>
-<li>文字、行内元素、行内块元素 === 给其父元素添加text-align: center</li>
-<li>块级元素 === 给当前元素设置 宽度和margin: 0 auto</li>
-<li>浮动元素 === 给外面标准流的父元素设置 宽度和margin：0 auto</li>
-<li>定位元素 === left: 50% translateX(-50%)</li>
-</ol>
-<h4 id="溢出隐藏overflow"><a class="markdownIt-Anchor" href="#溢出隐藏overflow"></a> 溢出隐藏：overflow</h4>
-<ol>
-<li>
-<p>默认值  overflow: visible</p>
-</li>
-<li>
-<p>溢出部分溢出  overflow: hidden</p>
-</li>
-<li>
-<p>无论是否溢出，都显示滚动条overflow: scroll</p>
-</li>
-<li>
-<p>根据是否溢出，自动显示或隐藏滚动条  overflow: auto</p>
-</li>
-<li>
-<p>white-space: nowrap;（设置文字在一行显示，不能换行）</p>
-</li>
-<li>
-<p>text-overflow: ellipsis;（规定当文本溢出时，显示省略号来代表被修剪的文本）</p>
-</li>
-</ol>
-<hr>
-<h4 id="边框圆角border-radius"><a class="markdownIt-Anchor" href="#边框圆角border-radius"></a> 边框圆角：border-radius</h4>
-<ol>
-<li>
-<p>让盒子四个角变圆润</p>
-</li>
-<li>
-<p>数字+px 、百分比 （从上、右、下、左)</p>
-</li>
-</ol>
-<hr>
-<h4 id="垂直对齐方式vertical-align"><a class="markdownIt-Anchor" href="#垂直对齐方式vertical-align"></a> 垂直对齐方式：vertical-align</h4>
-<ol>
-<li>baseline  默认</li>
-<li>top  顶部对齐</li>
-<li>middle  中部对齐</li>
-<li>bottom  底部对齐</li>
-</ol>
-<hr>
-<h5 id="精灵图"><a class="markdownIt-Anchor" href="#精灵图"></a> 精灵图：</h5>
-<ol>
-<li>
-<p>测量图片左上角坐标，分别取负值设置盒子的background-position：x y</p>
-</li>
-<li>
-<p>合并成一张大图片，这张大图片称之为<strong>精灵图</strong></p>
-</li>
-<li>
-<p>减轻服务器的压力，提高页面加载速度</p>
-</li>
-</ol>
-<hr>
-<h5 id="背景图片大小background-size"><a class="markdownIt-Anchor" href="#背景图片大小background-size"></a> 背景图片大小：background-size</h5>
-<ol>
-<li>
-<p>background-size：宽度 高度 /百分比</p>
-</li>
-<li>
-<p>contain  等比例缩放</p>
-</li>
-<li>
-<p>cover  将背景图片等比缩放，填满盒子 刚好没空白</p>
-</li>
-<li>
-<p>background: color image repeat position/size //连写同时设置时，需要注意覆盖问题</p>
-</li>
-</ol>
-<hr>
-<h5 id="只做了解"><a class="markdownIt-Anchor" href="#只做了解"></a> 只做了解：</h5>
-<ol>
-<li>表格边框合并      border-collapse: collapse</li>
-<li>焦点选择器          input:focus</li>
-<li>链接伪类选择器   link、visited、hover、active（未访问过、访问过、鼠标悬停、鼠标按下）</li>
-<li>属性选择器           input [ type = text ]</li>
-<li>元素整体透明       opacity: 0/1</li>
-<li>CSS画三角形        border - top - left - bottom - right = 0</li>
-</ol>
-<hr>
-<h5 id="文字阴影-text-shadow"><a class="markdownIt-Anchor" href="#文字阴影-text-shadow"></a> 文字阴影: text-shadow</h5>
-<ol>
-<li>
-<p>给文字添加阴影效果</p>
-</li>
-<li>
-<p>h-shadow  水平偏移量，允许负值</p>
-</li>
-<li>
-<p>v-shadow  垂直偏移量，允许负值</p>
-</li>
-<li>
-<p>blur  模糊度  ///   color  阴影颜色</p>
-</li>
-</ol>
-<hr>
-<h5 id="垂直方向居中-2"><a class="markdownIt-Anchor" href="#垂直方向居中-2"></a> 垂直方向居中：</h5>
-<ol>
-<li>
-<p>文字、行内元素 line-height 等于height</p>
-</li>
-<li>
-<p>行内块、行高等于高 搭配vertical-align: middle</p>
-</li>
-<li>
-<p>块级元素、浮动元素 需要去测量</p>
-</li>
-<li>
-<p>定位元素 === top：50% 50% translateY(-50%)</p>
-</li>
-<li>
-<p>行内元素、行内块元素、并列关系的垂直居中对齐</p>
-</li>
-<li>
-<p>设置vertical-align: middle</p>
-</li>
-</ol>
-<hr>
-<h5 id="垂直的用法"><a class="markdownIt-Anchor" href="#垂直的用法"></a> 垂直的用法：</h5>
-<ol>
-<li>
-<p>文本框和表单按钮无法对齐</p>
-</li>
-<li>
-<p>input和img无法对齐</p>
-</li>
-<li>
-<p>div中的文本框，文本框无法贴顶问题</p>
-</li>
-<li>
-<p>div不设高度由img标签撑开，此时img标签下面会存在额外间隙问题</p>
-</li>
-<li>
-<p>使用line-height和vertical-align: middle 让img标签垂直居中问题</p>
-</li>
-</ol>
-<hr>
-<h5 id="鼠标样式cursor"><a class="markdownIt-Anchor" href="#鼠标样式cursor"></a> 鼠标样式：cursor</h5>
-<ol>
-<li>
-<p>cursor: default; 小箭头</p>
-</li>
-<li>
-<p>cursor: pointer; 小手 (较常用)</p>
-</li>
-<li>
-<p>cursor: move; 移动</p>
-</li>
-<li>
-<p>cursor: text; 文本</p>
-</li>
-<li>
-<p>cursor: not-allowed; 禁止</p>
-</li>
-</ol>
-<hr>
-<h4 id="本节单词"><a class="markdownIt-Anchor" href="#本节单词"></a> 本节单词：</h4>
-<ol>
-<li>relative</li>
-<li>absolute</li>
-<li>fixed</li>
-<li>z-index</li>
-<li>vertical</li>
-<li>vertical-align</li>
-<li>middle</li>
-<li>transform</li>
-<li>transition</li>
-<li>translate</li>
-<li>radius</li>
-<li>static 默认值</li>
-<li>baseline 默认值</li>
-</ol>
-<hr>
-<h5 id="box-盒子阴影-text-文字阴影"><a class="markdownIt-Anchor" href="#box-盒子阴影-text-文字阴影"></a> box 盒子阴影 &amp; text 文字阴影</h5>
-<ol>
-<li>shadow</li>
-<li>blur</li>
-<li>spread</li>
-<li>inset</li>
-</ol>
-<hr>
-<h5 id="只了解"><a class="markdownIt-Anchor" href="#只了解"></a> 只了解：</h5>
-<h5 id="背景图片大小"><a class="markdownIt-Anchor" href="#背景图片大小"></a> 背景图片大小：</h5>
-<ol>
-<li>contain</li>
-<li>cover</li>
-</ol>
-<h5 id="溢出隐藏"><a class="markdownIt-Anchor" href="#溢出隐藏"></a> 溢出隐藏：</h5>
-<ol>
-<li>auto</li>
-<li>scroll</li>
-<li>visible</li>
-</ol>
-<h5 id="元素整体透明"><a class="markdownIt-Anchor" href="#元素整体透明"></a> 元素整体透明：</h5>
-<ol>
-<li>opacity</li>
-</ol>
-<h5 id="焦点伪类选择器"><a class="markdownIt-Anchor" href="#焦点伪类选择器"></a> 焦点伪类选择器：</h5>
-<ol>
-<li>focus</li>
-</ol>
-<h5 id="表格边框合并"><a class="markdownIt-Anchor" href="#表格边框合并"></a> 表格边框合并：</h5>
-<ol>
-<li>collapse</li>
-</ol>
-<h5 id="链接伪类选择器"><a class="markdownIt-Anchor" href="#链接伪类选择器"></a> 链接伪类选择器：</h5>
-<ol>
-<li>link</li>
-<li>visited</li>
-<li>active</li>
-</ol>
-<h5 id="鼠标样式"><a class="markdownIt-Anchor" href="#鼠标样式"></a> 鼠标样式：</h5>
-<ol>
-<li>cursor</li>
-<li>pointer</li>
-<li>move</li>
-<li>default</li>
-</ol>
-<hr>
-<p><img src="https://npm.elemecdn.com/webxc@1.0.0/html/css5.jpg" alt=""></p>
-</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>CSS第五天-定位</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://d.webxc.ml/posts/4048938649/">https://d.webxc.ml/posts/4048938649/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a" style="display: inline-block;width: 120px"><h>作者</h><div class="post-copyright-cc-info"><h>XC's Blog</h></div></div><div class="post-copyright-c" style="display: inline-block;width: 120px"><h>发布于</h><div class="post-copyright-cc-info"><h>2022-01-20</h></div></div><div class="post-copyright-u" style="display: inline-block;width: 120px"><h>更新于</h><div class="post-copyright-cc-info"><h>2023-01-17</h></div></div><div class="post-copyright-c" style="display: inline-block;width: 180px"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener external nofollow noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener external nofollow noreferrer" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-CSS/">学习笔记-CSS</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/webxc@1.0.0/cover/css2.jpg" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn1.tianli0.top/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer=""></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/142866882/"><img class="prev-cover" src="https://npm.elemecdn.com/webxc@1.0.0/cover/css4.jpg" onerror="onerror=null;src='https://api.vvhan.com/api/acgimg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">CSS第四天-浮动</div></div></a></div><div class="next-post pull-right"><a href="/posts/3363282404/"><img class="next-cover" src="https://npm.elemecdn.com/webxc@1.0.0/cover/css1.jpg" onerror="onerror=null;src='https://api.vvhan.com/api/acgimg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">CSS属性大全</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/d97/" title="CSS-2D-3D转换"><img class="cover" src="https://npm.elemecdn.com/webxc@1.0.11/cover/css5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-16</div><div class="title">CSS-2D-3D转换</div></div></a></div><div><a href="/posts/f4e7/" title="3D转换-转后不显示问题"><img class="cover" src="https://npm.elemecdn.com/webxc@1.0.11/cover/css5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-20</div><div class="title">3D转换-转后不显示问题</div></div></a></div><div><a href="/posts/378319538/" title="CSS第二天"><img class="cover" src="https://npm.elemecdn.com/webxc@1.0.0/cover/cover3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-18</div><div class="title">CSS第二天</div></div></a></div><div><a href="/posts/647650922/" title="CSS第一天"><img class="cover" src="https://npm.elemecdn.com/webxc@1.0.0/cover/css4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-17</div><div class="title">CSS第一天</div></div></a></div><div><a href="/posts/1536299488/" title="CSS第三天"><img class="cover" src="https://npm.elemecdn.com/webxc@1.0.0/cover/css3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-18</div><div class="title">CSS第三天</div></div></a></div><div><a href="/posts/142866882/" title="CSS第四天-浮动"><img class="cover" src="https://npm.elemecdn.com/webxc@1.0.0/cover/css4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-01-19</div><div class="title">CSS第四天-浮动</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="fgx"><div class="avatar_img"><img style="border-radius:10px" src="/img/a.webp" onerror="this.onerror=null;this.src='https://apis.yisous.xyz/api/randomAvatar'" alt="avatar"></div><div class="author-info__description">XC's Blog 记录生活和学习文章</div><div class="rights"><div class="author-info__name">XC's Blog</div><div class="card-info-data site-data is-center"><a class="adiv" href="/archives/"><div class="headline">文章</div><div class="length-num">62</div></a><a class="adiv" href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a class="adiv" href="/categories/"><div class="headline">分类</div><div class="length-num">20</div></a></div></div></div><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/web-xc" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://blog.csdn.net/qq_58402198?type=blog" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="iconfont icon-csdn"></i></a><a class="social-icon" href="https://www.cnblogs.com/LYXOfficial" rel="external nofollow noreferrer" target="_blank" title="博客园"><i class="iconfont icon-RSS"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="订阅RSS源"><i class="fa fa-rss"></i></a><a class="social-icon" href="https://www.zhihu.com/people/csy-7-12" rel="external nofollow noreferrer" target="_blank" title="知乎"><i class="iconfont icon-zhihu"></i></a><a class="social-icon" href="https://space.bilibili.com/2134826455" rel="external nofollow noreferrer" target="_blank" title="bilibili"><i class="iconfont icon-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">本网站的Twikoo评论系统使用Cravatar头像系统，请自行绑定邮箱配置</div></div><div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden;"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%;"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#css%E7%AC%AC%E4%BA%94%E5%A4%A9-%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.</span> <span class="toc-text"> CSS第五天-定位</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E5%AE%9A%E4%BD%8Dstatic"><span class="toc-number">1.0.1.</span> <span class="toc-text"> 静态定位：static</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8Drelative"><span class="toc-number">1.1.</span> <span class="toc-text"> 相对定位：relative</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8Dabsolute"><span class="toc-number">1.2.</span> <span class="toc-text"> 绝对定位：absolute</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BA%E5%AE%9A%E5%AE%9A%E4%BD%8Dfixed"><span class="toc-number">1.3.</span> <span class="toc-text"> 固定定位：fixed</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9A%E4%BD%8D%E5%B1%82%E7%BA%A7z-index"><span class="toc-number">1.4.</span> <span class="toc-text"> 定位层级：z-index</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%87%E6%B8%A1-transition"><span class="toc-number">1.5.</span> <span class="toc-text"> 过渡: transition</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%92%E5%AD%90%E9%98%B4%E5%BD%B1-box-shadow"><span class="toc-number">1.6.</span> <span class="toc-text"> 盒子阴影: box-shadow</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9A%90%E8%97%8F%E5%85%83%E7%B4%A0%E9%87%8D%E7%82%B9"><span class="toc-number">1.7.</span> <span class="toc-text"> 隐藏元素（重点）：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E5%B1%85%E4%B8%AD"><span class="toc-number">1.8.</span> <span class="toc-text"> 垂直方向居中：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E5%B1%85%E4%B8%AD"><span class="toc-number">1.8.1.</span> <span class="toc-text"> 水平方向居中：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8Foverflow"><span class="toc-number">1.9.</span> <span class="toc-text"> 溢出隐藏：overflow</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%B9%E6%A1%86%E5%9C%86%E8%A7%92border-radius"><span class="toc-number">1.10.</span> <span class="toc-text"> 边框圆角：border-radius</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9E%82%E7%9B%B4%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8Fvertical-align"><span class="toc-number">1.11.</span> <span class="toc-text"> 垂直对齐方式：vertical-align</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%B2%BE%E7%81%B5%E5%9B%BE"><span class="toc-number">1.11.1.</span> <span class="toc-text"> 精灵图：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8Fbackground-size"><span class="toc-number">1.11.2.</span> <span class="toc-text"> 背景图片大小：background-size</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%AA%E5%81%9A%E4%BA%86%E8%A7%A3"><span class="toc-number">1.11.3.</span> <span class="toc-text"> 只做了解：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E9%98%B4%E5%BD%B1-text-shadow"><span class="toc-number">1.11.4.</span> <span class="toc-text"> 文字阴影: text-shadow</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E5%B1%85%E4%B8%AD-2"><span class="toc-number">1.11.5.</span> <span class="toc-text"> 垂直方向居中：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9E%82%E7%9B%B4%E7%9A%84%E7%94%A8%E6%B3%95"><span class="toc-number">1.11.6.</span> <span class="toc-text"> 垂直的用法：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8Fcursor"><span class="toc-number">1.11.7.</span> <span class="toc-text"> 鼠标样式：cursor</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E8%8A%82%E5%8D%95%E8%AF%8D"><span class="toc-number">1.12.</span> <span class="toc-text"> 本节单词：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#box-%E7%9B%92%E5%AD%90%E9%98%B4%E5%BD%B1-text-%E6%96%87%E5%AD%97%E9%98%B4%E5%BD%B1"><span class="toc-number">1.12.1.</span> <span class="toc-text"> box 盒子阴影 &amp; text 文字阴影</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%AA%E4%BA%86%E8%A7%A3"><span class="toc-number">1.12.2.</span> <span class="toc-text"> 只了解：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F"><span class="toc-number">1.12.3.</span> <span class="toc-text"> 背景图片大小：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%BA%A2%E5%87%BA%E9%9A%90%E8%97%8F"><span class="toc-number">1.12.4.</span> <span class="toc-text"> 溢出隐藏：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%83%E7%B4%A0%E6%95%B4%E4%BD%93%E9%80%8F%E6%98%8E"><span class="toc-number">1.12.5.</span> <span class="toc-text"> 元素整体透明：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%84%A6%E7%82%B9%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.12.6.</span> <span class="toc-text"> 焦点伪类选择器：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E8%BE%B9%E6%A1%86%E5%90%88%E5%B9%B6"><span class="toc-number">1.12.7.</span> <span class="toc-text"> 表格边框合并：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-number">1.12.8.</span> <span class="toc-text"> 链接伪类选择器：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.12.9.</span> <span class="toc-text"> 鼠标样式：</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/fd38/" title="JavaScript 第五天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第五天"></a><div class="content"><a class="title" href="/posts/fd38/" title="JavaScript 第五天">JavaScript 第五天</a><time datetime="2023-02-16T09:00:00.000Z" title="发表于 2023-02-16 17:00:00">2023-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7f86/" title="JavaScript 第四天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第四天"></a><div class="content"><a class="title" href="/posts/7f86/" title="JavaScript 第四天">JavaScript 第四天</a><time datetime="2023-02-07T06:00:00.000Z" title="发表于 2023-02-07 14:00:00">2023-02-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/6e+47/" title="JavaScript 第三天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第三天"></a><div class="content"><a class="title" href="/posts/6e+47/" title="JavaScript 第三天">JavaScript 第三天</a><time datetime="2022-12-27T15:30:00.000Z" title="发表于 2022-12-27 23:30:00">2022-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/623e/" title="JavaScript 第二天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第二天"></a><div class="content"><a class="title" href="/posts/623e/" title="JavaScript 第二天">JavaScript 第二天</a><time datetime="2022-12-05T09:00:00.000Z" title="发表于 2022-12-05 17:00:00">2022-12-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f244/" title="JavaScript 第一天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第一天"></a><div class="content"><a class="title" href="/posts/f244/" title="JavaScript 第一天">JavaScript 第一天</a><time datetime="2022-11-22T14:15:00.000Z" title="发表于 2022-11-22 22:15:00">2022-11-22</time></div></div></div></div><div class="card-widget card-weather" style="width:100%,height:270px"><div class="item-headline"><i class="fas fa-cloud-sun"></i><span>天气</span></div><div id="he-plugin-standard"></div><script>WIDGET = {
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>JavaScript 第五天</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://d.webxc.ml/posts/fd38/">https://d.webxc.ml/posts/fd38/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a" style="display: inline-block;width: 120px"><h>作者</h><div class="post-copyright-cc-info"><h>XC's Blog</h></div></div><div class="post-copyright-c" style="display: inline-block;width: 120px"><h>发布于</h><div class="post-copyright-cc-info"><h>2023-02-16</h></div></div><div class="post-copyright-u" style="display: inline-block;width: 120px"><h>更新于</h><div class="post-copyright-cc-info"><h>2023-02-17</h></div></div><div class="post-copyright-c" style="display: inline-block;width: 180px"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener external nofollow noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener external nofollow noreferrer" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaScript%E7%AC%94%E8%AE%B0/">JavaScript笔记</a></div><div class="post_share"><div class="social-share" data-image="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" data-sites="wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn1.tianli0.top/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer=""></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/7f86/"><img class="prev-cover" src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="onerror=null;src='https://api.vvhan.com/api/acgimg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">JavaScript 第四天</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/f244/" title="JavaScript 第一天"><img class="cover" src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-22</div><div class="title">JavaScript 第一天</div></div></a></div><div><a href="/posts/6e+47/" title="JavaScript 第三天"><img class="cover" src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-27</div><div class="title">JavaScript 第三天</div></div></a></div><div><a href="/posts/623e/" title="JavaScript 第二天"><img class="cover" src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-05</div><div class="title">JavaScript 第二天</div></div></a></div><div><a href="/posts/7f86/" title="JavaScript 第四天"><img class="cover" src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-02-07</div><div class="title">JavaScript 第四天</div></div></a></div></div></div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="fgx"><div class="avatar_img"><img style="border-radius:10px" src="/img/a.webp" onerror="this.onerror=null;this.src='https://apis.yisous.xyz/api/randomAvatar'" alt="avatar"></div><div class="author-info__description">XC's Blog 记录生活和学习文章</div><div class="rights"><div class="author-info__name">XC's Blog</div><div class="card-info-data site-data is-center"><a class="adiv" href="/archives/"><div class="headline">文章</div><div class="length-num">62</div></a><a class="adiv" href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a class="adiv" href="/categories/"><div class="headline">分类</div><div class="length-num">20</div></a></div></div></div><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/web-xc" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://blog.csdn.net/qq_58402198?type=blog" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="iconfont icon-csdn"></i></a><a class="social-icon" href="https://www.cnblogs.com/LYXOfficial" rel="external nofollow noreferrer" target="_blank" title="博客园"><i class="iconfont icon-RSS"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="订阅RSS源"><i class="fa fa-rss"></i></a><a class="social-icon" href="https://www.zhihu.com/people/csy-7-12" rel="external nofollow noreferrer" target="_blank" title="知乎"><i class="iconfont icon-zhihu"></i></a><a class="social-icon" href="https://space.bilibili.com/2134826455" rel="external nofollow noreferrer" target="_blank" title="bilibili"><i class="iconfont icon-bilibili"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">本网站的Twikoo评论系统使用Cravatar头像系统，请自行绑定邮箱配置</div></div><div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden;"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%;"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.</span> <span class="toc-text"> 什么是对象:</span></a></li></ol><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E4%BD%BF%E7%94%A8"><span class="toc-number"></span> <span class="toc-text"> 对象使用:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E6%9C%89%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95%E7%BB%84%E6%88%90"><span class="toc-number"></span> <span class="toc-text"> 对象有属性和方法组成:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text"> 属性:</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%B7%E5%A3%B0%E6%98%8E%E4%B8%80%E4%B8%AA%E4%BA%A7%E5%93%81%E5%AF%B9%E8%B1%A1%E9%87%8C%E9%9D%A2%E5%8C%85%E5%A6%82%E4%B8%8B%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.</span> <span class="toc-text"> 请声明一个产品对象，里面包如下信息：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E8%AE%BF%E9%97%AE"><span class="toc-number"></span> <span class="toc-text"> 属性访问:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number"></span> <span class="toc-text"> 对象中的方法:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AF%B9%E8%B1%A1%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95%E8%AE%BF%E9%97%AE"><span class="toc-number">1.</span> <span class="toc-text"> 对象中的方法访问:</span></a></li></ol></li></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/fd38/" title="JavaScript 第五天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第五天"></a><div class="content"><a class="title" href="/posts/fd38/" title="JavaScript 第五天">JavaScript 第五天</a><time datetime="2023-02-16T09:00:00.000Z" title="发表于 2023-02-16 17:00:00">2023-02-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7f86/" title="JavaScript 第四天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第四天"></a><div class="content"><a class="title" href="/posts/7f86/" title="JavaScript 第四天">JavaScript 第四天</a><time datetime="2023-02-07T06:00:00.000Z" title="发表于 2023-02-07 14:00:00">2023-02-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/6e+47/" title="JavaScript 第三天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第三天"></a><div class="content"><a class="title" href="/posts/6e+47/" title="JavaScript 第三天">JavaScript 第三天</a><time datetime="2022-12-27T15:30:00.000Z" title="发表于 2022-12-27 23:30:00">2022-12-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/623e/" title="JavaScript 第二天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第二天"></a><div class="content"><a class="title" href="/posts/623e/" title="JavaScript 第二天">JavaScript 第二天</a><time datetime="2022-12-05T09:00:00.000Z" title="发表于 2022-12-05 17:00:00">2022-12-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f244/" title="JavaScript 第一天"><img src="https://cdn1.tianli0.top/gh/web-xc/iMG/postss/js1.jpg" onerror="this.onerror=null;this.src='https://api.vvhan.com/api/acgimg'" alt="JavaScript 第一天"></a><div class="content"><a class="title" href="/posts/f244/" title="JavaScript 第一天">JavaScript 第一天</a><time datetime="2022-11-22T14:15:00.000Z" title="发表于 2022-11-22 22:15:00">2022-11-22</time></div></div></div></div><div class="card-widget card-weather" style="width:100%,height:270px"><div class="item-headline"><i class="fas fa-cloud-sun"></i><span>天气</span></div><div id="he-plugin-standard"></div><script>WIDGET = {
   "CONFIG": {
     "layout": "2",
     "width": 270,
